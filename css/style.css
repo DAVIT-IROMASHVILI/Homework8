@@ -41,7 +41,9 @@ button:active {
 
 .second_section:hover{
     border-radius: 20px;
-    box-shadow: 1px 1px 4px 4px darkgoldenrod, -1px -1px 4px 4px darkgoldenrod;
+    /* box-shadow: 1px 1px 4px 4px darkgoldenrod, -1px -1px 4px 4px darkgoldenrod; */
+    box-shadow: 0 0 5px darkgoldenrod, 0 0 20px darkgoldenrod, 0 0 60px darkgoldenrod, 0 0 100px darkgoldenrod;
+
 }
 
 .sec_section_img{
@@ -50,9 +52,8 @@ button:active {
     transition: all 1s;
 }
 
-.sec_section_img:hover{
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+.sec_section:hover .sec_section_img{
+    border-radius: 10px 10px 0 0;
 }
 
 .sec_section_p{
@@ -85,9 +86,9 @@ button:active {
     width: 400px;
     height: 400px;
     position: relative;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     margin: 20px auto;
  }     
 
@@ -100,6 +101,9 @@ button:active {
     border-bottom: 50px solid yellow;
     border-right: 50px solid red;
     animation: spining 1s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }  
 
 
@@ -124,7 +128,7 @@ button:active {
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
-    pointer-events: none;
+    /* pointer-events: none; */
 }
 
         /* 5 */
